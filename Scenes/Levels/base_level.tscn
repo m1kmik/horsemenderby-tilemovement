@@ -66,20 +66,34 @@ sources/1 = SubResource("TileSetAtlasSource_lai3q")
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_iemmg"]
 texture = ExtResource("4_30ow2")
 0:0/0 = 0
-0:0/0/custom_data_0 = Vector2(1, 0)
+0:0/0/custom_data_1 = Vector2(1, 0)
 1:0/0 = 0
 2:0/0 = 0
 0:1/0 = 0
 1:1/0 = 0
 2:1/0 = 0
+2:1/0/custom_data_2 = Vector2(-1, 0)
 0:2/0 = 0
 1:2/0 = 0
 2:2/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3b8rg"]
+texture = ExtResource("2_17q77")
+0:0/0 = 0
+
 [sub_resource type="TileSet" id="TileSet_qc24j"]
-custom_data_layer_0/name = "conveyer_right"
+custom_data_layer_0/name = "regain_control"
 custom_data_layer_0/type = 5
+custom_data_layer_1/name = "conveyer_right"
+custom_data_layer_1/type = 5
+custom_data_layer_2/name = "conveyer_left"
+custom_data_layer_2/type = 5
+custom_data_layer_3/name = "conveyer_up"
+custom_data_layer_3/type = 5
+custom_data_layer_4/name = "conveyer_down"
+custom_data_layer_4/type = 5
 sources/0 = SubResource("TileSetAtlasSource_iemmg")
+sources/1 = SubResource("TileSetAtlasSource_3b8rg")
 
 [node name="LevelRoot" type="Node2D" unique_id=239177311]
 y_sort_enabled = true
@@ -89,7 +103,7 @@ tile_map_data = PackedByteArray("AAAAAAAAAQAAAAAAAAAAAAEAAQAAAAAAAAAAAAIAAQAAAAA
 tile_set = SubResource("TileSet_xepy2")
 
 [node name="TileMapLayer_conveyer" type="TileMapLayer" parent="." unique_id=758557482 groups=["tilemap"]]
-tile_map_data = PackedByteArray("AAAPABgAAAAAAAAAAAAQABgAAAAAAAAAAAARABgAAAAAAAAAAAASABgAAAAAAAAAAAATABgAAAAAAAAAAAA=")
+tile_map_data = PackedByteArray("AAAPABgAAAAAAAAAAAAQABgAAAAAAAAAAAARABgAAAAAAAAAAAASABgAAAAAAAAAAAATABgAAAAAAAAAAAAUABgAAQAAAAAAAAATABYAAAACAAEAAAASABYAAAACAAEAAAARABYAAAACAAEAAAAQABYAAAACAAEAAAAPABYAAQAAAAAAAAA=")
 tile_set = SubResource("TileSet_qc24j")
 
 [node name="Player" parent="." unique_id=137031535 instance=ExtResource("2_s0vl6")]
