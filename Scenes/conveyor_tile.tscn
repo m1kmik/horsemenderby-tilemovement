@@ -18,18 +18,21 @@ region_enabled = true
 region_rect = Rect2(160, 2848, 34, 33)
 
 [node name="spriteDown" type="Sprite2D" parent="Sprites" unique_id=1221162727]
+visible = false
 position = Vector2(4, 19)
 texture = ExtResource("1_fw7cn")
 region_enabled = true
 region_rect = Rect2(160, 2878, 34, 33)
 
 [node name="spriteLeft" type="Sprite2D" parent="Sprites" unique_id=1042450330]
+visible = false
 position = Vector2(4, 19)
 texture = ExtResource("1_fw7cn")
 region_enabled = true
 region_rect = Rect2(192, 2849, 32, 33)
 
 [node name="spriteRight" type="Sprite2D" parent="Sprites" unique_id=1694257335]
+visible = false
 position = Vector2(4, 19)
 texture = ExtResource("1_fw7cn")
 region_enabled = true
@@ -40,3 +43,4 @@ position = Vector2(4.5, 19)
 shape = SubResource("RectangleShape2D_xepy2")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
