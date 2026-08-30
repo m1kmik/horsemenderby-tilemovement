@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://noipvlvgd23j"]
+
+[ext_resource type="Texture2D" uid="uid://bjab7j1upcayr" path="res://Assets/TileSet/Interior general.PNG" id="1_fw7cn"]
+[ext_resource type="Script" uid="uid://coi550od5g72k" path="res://Scenes/conveyor_tile.gd" id="1_ipu53"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xepy2"]
+size = Vector2(35, 32)
+
+[node name="ConveyorTile" type="Area2D" unique_id=1634119982]
+script = ExtResource("1_ipu53")
+
+[node name="Sprites" type="Node2D" parent="." unique_id=1246368436]
+
+[node name="spriteUp" type="Sprite2D" parent="Sprites" unique_id=1020260533]
+position = Vector2(4, 19)
+texture = ExtResource("1_fw7cn")
+region_enabled = true
+region_rect = Rect2(160, 2848, 34, 33)
+
+[node name="spriteDown" type="Sprite2D" parent="Sprites" unique_id=1221162727]
+position = Vector2(4, 19)
+texture = ExtResource("1_fw7cn")
+region_enabled = true
+region_rect = Rect2(160, 2878, 34, 33)
+
+[node name="spriteLeft" type="Sprite2D" parent="Sprites" unique_id=1042450330]
+position = Vector2(4, 19)
+texture = ExtResource("1_fw7cn")
+region_enabled = true
+region_rect = Rect2(192, 2849, 32, 33)
+
+[node name="spriteRight" type="Sprite2D" parent="Sprites" unique_id=1694257335]
+position = Vector2(4, 19)
+texture = ExtResource("1_fw7cn")
+region_enabled = true
+region_rect = Rect2(192, 2879, 32, 33)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1915900922]
+position = Vector2(4.5, 19)
+shape = SubResource("RectangleShape2D_xepy2")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

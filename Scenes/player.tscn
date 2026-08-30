@@ -1,8 +1,0 @@
-[gd_scene format=3 uid="uid://bdbte7tstrhu"]
-
-[ext_resource type="PackedScene" uid="uid://juaavh8ok2tu" path="res://Scenes/Levels/base_level.tscn" id="2_cvnsp"]
-
-[node name="Main" type="Node2D" unique_id=628932603]
-
-[node name="LevelRoot" parent="." unique_id=239177311 instance=ExtResource("2_cvnsp")]
-scale = Vector2(4, 4)
