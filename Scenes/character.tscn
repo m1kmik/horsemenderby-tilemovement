@@ -193,7 +193,7 @@ script = ExtResource("1_ushfy")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1109081307]
 sprite_frames = SubResource("SpriteFrames_8dto7")
-animation = &"idle_left"
+animation = &"idle_down"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1495612279]
 shape = SubResource("RectangleShape2D_xepy2")
